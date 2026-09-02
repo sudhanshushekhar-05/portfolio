@@ -1,145 +1,147 @@
 /* ==========================================================================
    PORTFOLIO PROJECTS MODULE — MEES VERBERNE ASYMMETRICAL GRID FORMAT
+   Contains ALL user authentic projects: ESP32 Phone Monitor, Study Website,
+   AI Resume Analyzer, Snake Game, Cyber Security Program, & Portfolio Engine.
    ========================================================================== */
 
 const projectsData = [
   {
-    id: 'study-buddy',
+    id: 'esp32-phone-monitor',
     num: '01',
-    title: 'Study <em>Buddy</em>',
-    rawTitle: 'Study Buddy - Student Hub',
-    category: 'web',
+    title: 'ESP32 Smart Phone <em>Monitor</em>',
+    rawTitle: 'ESP32 Smart Phone Monitoring & Detection System',
+    category: 'iot',
     isHighlight: true,
-    tags: ['Collaboration', 'WebSockets', 'Productivity', 'React.js'],
+    tags: ['IoT Hardware', 'Embedded C++', 'HX711 Load Cell', 'ECE 279'],
     designer: 'Sudhanshu Shekhar',
-    client: 'Student Community',
-    shortDesc: 'A collaborative study workspace designed to help students organize learning, join virtual study rooms, and manage task kanban boards.',
-    fullDesc: 'Study Buddy is a live web-based student productivity hub deployed on Render. Features real-time study timers, active course study rooms, group activity feeds, and a drag-and-drop Kanban board for managing assignments.',
-    image: 'assets/project_study_buddy.jpg',
-    tech: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'WebSockets', 'LocalStorage', 'Node.js / Express'],
+    client: 'LPU ECE 279 Capstone',
+    shortDesc: 'IoT classroom compliance system using ESP32, IR student counters, HX711 load cell weight sensors, PIR motion security, and automated audio-visual alarms.',
+    fullDesc: 'Designed and engineered an intelligent embedded classroom compliance system powered by the ESP32 microcontroller. Integrates IR sensors for counting attending students, a load cell platform with HX711 amplifier for measuring deposited phone weights, PIR & Ultrasonic sensors for perimeter motion verification, a 16x2 I2C LCD display, and real-time audio-visual alarm triggers on count mismatch or unauthorized phone removal.',
+    image: 'assets/project_esp32_phone_monitor.jpg',
+    tech: ['ESP32', 'C++ / Arduino', 'HX711 Load Cell', 'IR & PIR Sensors', 'LCD 16x2 I2C', 'MQTT / Blynk'],
     features: [
-      'Virtual live study rooms with participant audio/chat status',
-      'Integrated Pomodoro Study Timer with custom session analytics',
-      'Drag-and-drop Kanban board for organizing course assignments',
-      'Deployed live on Render with active user collaboration feeds'
+      'Real-time automated comparison between student count (IR sensors) and phone count (HX711 weight sensor)',
+      'Dual PIR motion and ultrasonic sensors continuously monitoring phone collection station perimeter',
+      'Instant audio-visual alert triggers (buzzer & red LED alarm) on count mismatch or phone tampering',
+      'Real-time status, live counts, and system diagnostics displayed on 16x2 I2C LCD screen'
+    ],
+    liveUrl: null,
+    githubUrl: 'https://github.com/sudhanshushekhar-05/esp32-phone-monitoring-system'
+  },
+  {
+    id: 'study-website',
+    num: '02',
+    title: 'Study <em>Website Hub</em>',
+    rawTitle: 'Study Website (Class 9 & 10 Platform)',
+    category: 'web',
+    isHalf: true,
+    tags: ['EdTech Portal', 'WebSockets', 'Class 9 & 10', 'Live App'],
+    designer: 'Sudhanshu Shekhar',
+    client: 'Class 9 & 10 Students',
+    shortDesc: 'Centralized EdTech study portal providing syllabus notes, embedded video tutorials, practice quiz modules, and live revision scheduling.',
+    fullDesc: 'Built a full-fledged educational portal deployed live on Render targeted at Class 9 & 10 students. Features centralized study material, embedded video lectures, interactive practice quiz modules with real-time score tracking, and a custom revision scheduler to keep students organized.',
+    image: 'assets/project_study_buddy.jpg',
+    tech: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'WebSockets', 'Node.js / Express'],
+    features: [
+      'Centralized repository for Class 9 & 10 syllabus notes and video tutorials',
+      'Interactive quiz engine enabling students to test and track topic mastery',
+      'Custom study planning tool to schedule revision alongside video content',
+      'Deployed live on Render with fast mobile responsiveness'
     ],
     liveUrl: 'https://study-buddy-eq2m.onrender.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadfqsCn6nOIUqVQPbnnjC6OzenKF8uuoCnCw1oXdsgSKMpxSCJmvDGwDV7hMw_aem_36AAuWVFn4zoOzld1gFy4w',
-    githubUrl: 'https://github.com/sudhanshushekhar/study-buddy'
+    githubUrl: 'https://github.com/sudhanshushekhar-05/study-website'
   },
   {
     id: 'ai-resume',
-    num: '02',
-    title: 'AI Resume <em>Analyzer</em>',
-    rawTitle: 'AI Resume ATS Evaluator',
-    category: 'ai',
-    isHalf: true,
-    tags: ['AI/ML', 'NLP Analytics', 'ATS Score'],
-    designer: 'Sudhanshu Shekhar',
-    client: 'Job Seekers & Recruiter Tech',
-    shortDesc: 'Automated ATS score evaluator and NLP resume analyzer that detects skill gaps, draws radar charts, and recommends job roles.',
-    fullDesc: 'An intelligent web solution designed to optimize tech resumes for Applicant Tracking Systems (ATS). The application parses resume text, evaluates keyword density, generates a 0-100% ATS score, maps candidate strengths on a skill radar, and highlights missing skills.',
-    image: 'assets/project_ai_resume.jpg',
-    tech: ['Python', 'NLP', 'JavaScript', 'Chart.js', 'HTML5/CSS3'],
-    features: [
-      'Instant ATS score calculation with visual percentage dial indicator',
-      'Interactive Skill Match Radar chart comparing resume vs target job posting',
-      'Automated missing skill recommendations and formatting audit',
-      'Exportable PDF evaluation report'
-    ],
-    liveUrl: null,
-    githubUrl: 'https://github.com/sudhanshushekhar/ai-resume-analyzer'
-  },
-  {
-    id: 'iot-monitor',
     num: '03',
-    title: 'ESP32 Smart <em>Environment</em>',
-    rawTitle: 'ESP32 Environmental Station',
-    category: 'iot',
-    isHalf: true,
-    tags: ['Microcontrollers', 'Embedded C++', 'Telemetry'],
-    designer: 'Sudhanshu Shekhar',
-    client: 'IoT Research Station',
-    shortDesc: 'IoT telemetry hardware project featuring ESP32 microcontrollers, climate sensors, MQTT data stream, and real-time web telemetry chart.',
-    fullDesc: 'A hardware-software IoT station built on the ESP32 platform. Measures temperature, relative humidity, and air quality index (AQI) in real-time. Transmits telemetry via MQTT over Wi-Fi to a web dashboard featuring live canvas line charts.',
-    image: 'assets/project_iot_smart.jpg',
-    tech: ['ESP32', 'Arduino / C++', 'Sensors (SHT31/MQ)', 'MQTT', 'Chart.js'],
-    features: [
-      'Sub-second telemetry sampling of temperature, humidity, and AQI',
-      'Live streaming web dashboard with auto-updating time-series charts',
-      'Hardware status diagnostic indicators and battery monitoring',
-      'Low power sleep modes and emergency threshold alert notifications'
-    ],
-    liveUrl: null,
-    githubUrl: 'https://github.com/sudhanshushekhar/esp32-environmental-monitor'
-  },
-  {
-    id: 'dsa-visualizer',
-    num: '04',
-    title: 'AlgoVision <em>Visualizer</em>',
-    rawTitle: 'DSA Algorithm & Graph Visualizer',
-    category: 'web',
-    isHalf: true,
-    tags: ['Algorithms', 'C++ / JS', 'Canvas API', 'Interactive'],
-    designer: 'Sudhanshu Shekhar',
-    client: 'CS Learning Portal',
-    shortDesc: 'An interactive algorithm visualizer demonstrating array sorting, tree traversals, and graph search paths with step-by-step memory trace.',
-    fullDesc: 'AlgoVision provides step-by-step animated visual representations of fundamental computer science data structures and sorting algorithms including Bubble Sort, Quick Sort, AVL Tree balancing, and Dijkstra Graph search.',
-    image: 'assets/project_dsa_visualizer.jpg',
-    tech: ['JavaScript (ES6)', 'HTML5 Canvas API', 'C++', 'Data Structures'],
-    features: [
-      'Real-time speed control and array size adjustments',
-      'Interactive node highlight showing active comparisons',
-      'Code snippet execution tracer highlighting active lines',
-      'Built-in tutorials explaining algorithm time and space complexities'
-    ],
-    liveUrl: null,
-    githubUrl: 'https://github.com/sudhanshushekhar/dsa-visualizer'
-  },
-  {
-    id: 'face-attendance',
-    num: '05',
-    title: 'AFRAL <em>AI Vision</em>',
-    rawTitle: 'AI Face Recognition Attendance System',
+    title: 'AI Resume <em>Analyzer</em>',
+    rawTitle: 'AI Resume ATS Evaluator & Career Assistant',
     category: 'ai',
     isHalf: true,
-    tags: ['Computer Vision', 'OpenCV', 'Python', 'AI'],
+    tags: ['AI / NLP', 'Python', 'ATS Score', 'Career Tool'],
     designer: 'Sudhanshu Shekhar',
-    client: 'Campus Entrance System',
-    shortDesc: 'Automated facial recognition attendance logging system with live camera feed keypoint matching and student database integration.',
-    fullDesc: 'AFRAL (Automated Facial Recognition Attendance Logging) uses OpenCV and deep facial embedding models to detect and register student attendance seamlessly as candidates enter the campus.',
-    image: 'assets/project_face_attendance.jpg',
-    tech: ['Python', 'OpenCV', 'Face Recognition API', 'SQLite', 'HTML5/CSS3'],
+    client: 'Job Seekers & Recruiters',
+    shortDesc: 'AI resume analyzer that parses candidate resumes, evaluates keyword density, computes ATS compatibility scores, and highlights skill gaps.',
+    fullDesc: 'An intelligent AI career assistant platform designed to optimize resumes for ATS compatibility. Parses uploaded resumes to calculate role-fit percentages against job descriptions, identifies missing skill gaps, and suggests recommended job titles, companies, and expected salary ranges.',
+    image: 'assets/project_ai_resume.jpg',
+    tech: ['Python', 'NLP', 'Flask', 'React', 'Chart.js'],
     features: [
-      'Sub-second facial landmark detection and embedding comparison',
-      'Live camera feed bounding box overlay with match confidence %',
-      'Automated attendance record logging into SQL database',
-      'Real-time student status dashboard and absent alerts'
+      'Resume parser extracting candidate skills and calculating ATS compatibility score',
+      'Job-matching engine comparing skills against job descriptions for role-fit %',
+      'Career recommendations engine suggesting suitable roles, companies & salary ranges',
+      'Interactive dashboard visualizer built with React and Flask backend'
     ],
     liveUrl: null,
-    githubUrl: 'https://github.com/sudhanshushekhar/afral-face-attendance'
+    githubUrl: 'https://github.com/sudhanshushekhar-05/ai-resume-analyzer'
   },
   {
     id: 'snake-game',
-    num: '06',
-    title: 'Snake <em>Arcade Engine</em>',
-    rawTitle: '2D Canvas Snake Arcade Engine',
-    category: 'web',
-    isHighlight: true,
-    tags: ['Game Engine', 'Canvas API', 'JavaScript', 'Retro'],
+    num: '04',
+    title: 'Snake Game <em>GUI Engine</em>',
+    rawTitle: 'Snake Game – GUI Python Application',
+    category: 'python',
+    isHalf: true,
+    tags: ['Python', 'GUI Graphics', 'Collision Engine', 'Retro'],
     designer: 'Sudhanshu Shekhar',
     client: 'Arcade Gaming',
-    shortDesc: 'Retro 2D arcade Snake game engine featuring custom collision physics, high score tracking, sound effects, and smooth 60fps canvas rendering.',
-    fullDesc: 'A high-performance 2D HTML5 Canvas game engine built purely with vanilla JavaScript ES6. Includes precise grid collision detection, responsive keyboard and touch controls, score persistence in LocalStorage, and retro sound effects.',
+    shortDesc: 'Classic GUI-based Snake arcade application developed in Python using event loops, real-time collision detection, and score persistence.',
+    fullDesc: 'Engineered a desktop GUI Snake game in Python. Implemented a smooth continuous game loop governing directional velocity, food spawn generation, body segment growth, wall/self collision logic, and live high-score persistence.',
     image: 'assets/project_snake_game.jpg',
-    tech: ['JavaScript (ES6)', 'HTML5 Canvas', 'CSS3', 'Web Audio API'],
+    tech: ['Python', 'GUI Graphics', 'Event Handling', 'File I/O'],
     features: [
-      'Smooth 60 FPS canvas loop rendering',
-      'Multiple difficulty levels and growing speed multipliers',
-      'LocalStorage high score leaderboard',
-      'Touch controls optimized for mobile and desktop screens'
+      'Real-time continuous game loop handling keyboard input and frame rendering',
+      'Accurate pixel/grid collision detection for boundary walls and self-intersection',
+      'Live scoring engine tracking score progression and high-score records',
+      'Custom retro-arcade graphic styling and sound effect triggers'
     ],
     liveUrl: null,
-    githubUrl: 'https://github.com/sudhanshushekhar/snake-arcade-engine'
+    githubUrl: 'https://github.com/sudhanshushekhar-05/snake-game-python'
+  },
+  {
+    id: 'cyber-security',
+    num: '05',
+    title: 'Cyber Security <em>Initiative</em>',
+    rawTitle: 'Cyber Security Awareness Program',
+    category: 'social',
+    isHalf: true,
+    tags: ['LPU Outreach', 'WNS Cares', 'Phishing Defense', 'Security'],
+    designer: 'Sudhanshu Shekhar',
+    client: 'Community Outreach',
+    shortDesc: 'Community security training initiative under LPU x WNS Cares Foundation, educating 30 participants on digital safety and phishing defense.',
+    fullDesc: 'Led a community development initiative under LPU in association with the WNS Cares Foundation. Taught 30 participants (Class 2 students to adults) essential digital safety, password hygiene, and mock phishing exercise recognition.',
+    image: 'assets/project_dsa_visualizer.jpg',
+    tech: ['Cyber Security', 'Digital Literacy', 'Community Outreach', 'WNS Cares'],
+    features: [
+      'Delivered WNS Cyber Smart e-learning modules in Hindi and English',
+      'Conducted hands-on mock phishing exercises and password security sessions',
+      'Successfully certified all 30 participants with digital credentials',
+      'Maintained verified Excel participant database and certificate reference records'
+    ],
+    liveUrl: null,
+    githubUrl: 'https://github.com/sudhanshushekhar-05'
+  },
+  {
+    id: 'portfolio-website',
+    num: '06',
+    title: 'Creative <em>Portfolio Engine</em>',
+    rawTitle: 'Personal Portfolio Website',
+    category: 'web',
+    isHighlight: true,
+    tags: ['HTML5 / CSS3', 'Vanilla JS', 'Mees Verberne Theme', 'Design'],
+    designer: 'Sudhanshu Shekhar',
+    client: 'Personal Branding',
+    shortDesc: 'Custom portfolio web engine featuring Mees Verberne Sand & Navy design, floating pill navigation, marquee tickers, and responsive cards.',
+    fullDesc: 'Designed and developed a responsive developer portfolio website using vanilla HTML, CSS, and JavaScript. Features interactive particle canvas animations, category project filters, skill progress visualization, and responsive navigation across mobile, tablet, and desktop.',
+    image: 'assets/project_face_attendance.jpg',
+    tech: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Design System'],
+    features: [
+      'Responsive mobile-first layout adapting across all screen dimensions',
+      'Interactive skill category tabs and dynamic project modal dialogs',
+      'Mees Verberne Sand & Navy theme with high-impact Syne typography',
+      'Downloadable resume integration and bracketed contact form'
+    ],
+    liveUrl: null,
+    githubUrl: 'https://github.com/sudhanshushekhar-05/portfolio-website'
   }
 ];
 

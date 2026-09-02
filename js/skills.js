@@ -1,18 +1,18 @@
 /* ==========================================================================
-   PORTFOLIO SKILLS ECOSYSTEM MODULE (MATCHED TO CV)
+   PORTFOLIO SKILLS ECOSYSTEM MODULE (MATCHED TO CV & IOT HARDWARE)
    ========================================================================== */
 
 const skillsData = [
   // Languages
   { name: 'Python', category: 'languages', icon: 'fa-brands fa-python', level: 90, color: '#3776AB' },
   { name: 'JavaScript', category: 'languages', icon: 'fa-brands fa-js', level: 85, color: '#F7DF1E' },
-  { name: 'C Language', category: 'languages', icon: 'fa-solid fa-code', level: 85, color: '#A8B9CC' },
+  { name: 'C / C++', category: 'languages', icon: 'fa-solid fa-code', level: 88, color: '#00599C' },
 
   // Web Development
   { name: 'HTML5', category: 'web', icon: 'fa-brands fa-html5', level: 95, color: '#E34F26' },
   { name: 'CSS3', category: 'web', icon: 'fa-brands fa-css3-alt', level: 90, color: '#1572B6' },
 
-  // Databases
+  // Databases & Cloud
   { name: 'PostgreSQL', category: 'database', icon: 'fa-solid fa-database', level: 82, color: '#4169E1' },
 
   // Developer Tools
@@ -20,8 +20,13 @@ const skillsData = [
   { name: 'GitHub', category: 'tools', icon: 'fa-brands fa-github', level: 90, color: '#ffffff' },
   { name: 'VS Code', category: 'tools', icon: 'fa-solid fa-laptop-code', level: 95, color: '#007ACC' },
 
+  // Hardware & IoT Sensors (ECE 279 Capstone)
+  { name: 'ESP32 Microcontroller', category: 'iot', icon: 'fa-solid fa-microchip', level: 90, color: '#38bdf8' },
+  { name: 'HX711 & Load Cell', category: 'iot', icon: 'fa-solid fa-weight-hanging', level: 88, color: '#10b981' },
+  { name: 'IR & PIR Sensors', category: 'iot', icon: 'fa-solid fa-rss', level: 92, color: '#f59e0b' },
+
   // Core CS Subjects
-  { name: 'OOPS (Basics)', category: 'core', icon: 'fa-solid fa-cubes', level: 85, color: '#a855f7' },
+  { name: 'OOPS (Basics)', category: 'core', icon: 'fa-solid fa-cubes', level: 85, color: '#6366f1' },
   { name: 'Problem Solving', category: 'core', icon: 'fa-solid fa-brain', level: 90, color: '#38bdf8' },
 
   // Soft Skills
