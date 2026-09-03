@@ -95,7 +95,7 @@ const projectsData = [
       'Custom retro-arcade graphic styling and sound effect triggers'
     ],
     liveUrl: null,
-    githubUrl: 'https://github.com/sudhanshushekhar-05/snake-game-python'
+    githubUrl: 'https://github.com/sudhanshushekhar-05/snake-arcade-engine'
   },
   {
     id: 'cyber-security',
@@ -118,30 +118,7 @@ const projectsData = [
       'Maintained verified Excel participant database and certificate reference records'
     ],
     liveUrl: null,
-    githubUrl: 'https://github.com/sudhanshushekhar-05'
-  },
-  {
-    id: 'portfolio-website',
-    num: '06',
-    title: 'Creative <em>Portfolio Engine</em>',
-    rawTitle: 'Personal Portfolio Website',
-    category: 'web',
-    isHighlight: true,
-    tags: ['HTML5 / CSS3', 'Vanilla JS', 'Mees Verberne Theme', 'Design'],
-    designer: 'Sudhanshu Shekhar',
-    client: 'Personal Branding',
-    shortDesc: 'Custom portfolio web engine featuring Mees Verberne Sand & Navy design, floating pill navigation, marquee tickers, and responsive cards.',
-    fullDesc: 'Designed and developed a responsive developer portfolio website using vanilla HTML, CSS, and JavaScript. Features interactive particle canvas animations, category project filters, skill progress visualization, and responsive navigation across mobile, tablet, and desktop.',
-    image: 'assets/project_face_attendance.jpg',
-    tech: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Design System'],
-    features: [
-      'Responsive mobile-first layout adapting across all screen dimensions',
-      'Interactive skill category tabs and dynamic project modal dialogs',
-      'Mees Verberne Sand & Navy theme with high-impact Syne typography',
-      'Downloadable resume integration and bracketed contact form'
-    ],
-    liveUrl: null,
-    githubUrl: 'https://github.com/sudhanshushekhar-05/portfolio-website'
+    githubUrl: 'https://github.com/sudhanshushekhar-05/cyber-security-awareness-program'
   }
 ];
 

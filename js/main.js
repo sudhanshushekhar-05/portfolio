@@ -40,7 +40,7 @@ function initCustomCursor() {
   }
   animateGlow();
 
-  const interactables = document.querySelectorAll('a, button, .project-card, .skill-card, .stat-card');
+  const interactables = document.querySelectorAll('a, button, .item, .skillCard, .statCard, .serviceCard');
   interactables.forEach(el => {
     el.addEventListener('mouseenter', () => glow.classList.add('active'));
     el.addEventListener('mouseleave', () => glow.classList.remove('active'));
@@ -51,7 +51,7 @@ function initCustomCursor() {
    2. 3D CARD TILT EFFECT ON MOUSEMOVE
    -------------------------------------------------------------------------- */
 function initTiltEffect() {
-  const cards = document.querySelectorAll('.project-card, .about-card, .stat-card, .avatar-wrapper');
+  const cards = document.querySelectorAll('.item, .statCard, .heroPhotoCard, .serviceCard, .locationCard');
 
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
@@ -228,7 +228,8 @@ function initScrollAnimations() {
    6. STATISTICAL COUNTER ANIMATION
    -------------------------------------------------------------------------- */
 function initStatsCounter() {
-  const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+  const statNumbers = document.querySelectorAll('.statNumber[data-target]');
+  if (!statNumbers.length) return;
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
@@ -252,7 +253,7 @@ function initStatsCounter() {
         obs.unobserve(el);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.2 });
 
   statNumbers.forEach(num => observer.observe(num));
 }
