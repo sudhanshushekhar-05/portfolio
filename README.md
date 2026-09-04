@@ -74,6 +74,7 @@ To run this repository on your local machine:
 
 - **Name:** Sudhanshu Shekhar
 - **Education:** B.Tech Computer Science & Engineering — *Lovely Professional University (LPU)*
+- **Email:** [sudhanshushekharkerai1234@gmail.com](mailto:sudhanshushekharkerai1234@gmail.com)
 - **GitHub:** [@sudhanshushekhar-05](https://github.com/sudhanshushekhar-05)
 - **LinkedIn:** [sudhanshushekhar](https://linkedin.com/in/sudhanshushekhar)
 - **Instagram:** [@sudhanshu_shekhar05](https://www.instagram.com/sudhanshu_shekhar05/)
